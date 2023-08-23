@@ -5,36 +5,8 @@
     <title>Contact Form</title>
     <style>
       /* Basic form styling */
-      /*new*/ 
-       .popup-container {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .popup-container.active {
-      display: block;
-    }
-    .popup-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-    }
-    .popup-overlay.active {
-      display: block;
-    }
-        /*new*/ 
+   
+    
       form {
         max-width: 500px;
         margin: 33px auto;
@@ -466,21 +438,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <input type="submit" value="Submit" />
       </fieldset>
     </form>
- <script>
-    const openFormButton = document.getElementById('openFormButton');
-    const popupOverlay = document.getElementById('popupOverlay');
-    const popupContainer = document.getElementById('popupContainer');
 
-    openFormButton.addEventListener('click', () => {
-      popupOverlay.classList.add('active');
-      popupContainer.classList.add('active');
-    });
-
-    popupOverlay.addEventListener('click', () => {
-      popupOverlay.classList.remove('active');
-      popupContainer.classList.remove('active');
-    });
-  </script>
     <!-- Google Tag Manager (noscript) -->
       <noscript
       ><iframe
